@@ -1,0 +1,35 @@
+footer {
+  margin-top: 15px;
+}
+
+.foot-panel1 {
+  background-color: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-panel2 {
+  background-color: #0f714d;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.foot-panel3 {
+  background-color: #074b32;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-panel4 {
+  background-color: #034949;
+  color: white;
+  height: 80px;
+  text-align: center;
+}

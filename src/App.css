@@ -1,0 +1,418 @@
+/* =========================
+   GLOBAL RESET (NOT BODY)
+   ========================= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+/* =========================
+   FULL HOME BACKGROUND
+   ========================= */
+.home-bg {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Background image */
+.home-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/assets/images/Other/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  transform: scale(1.08);
+  z-index: -2;
+}
+
+/* Dark overlay */
+.home-bg::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+
+/* =========================
+   HEADER / NAVBAR
+   ========================= */
+header {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(18, 93, 19);
+  padding: 10px 20px;
+  z-index: 1000;
+  color: white;
+}
+
+header a,
+header i {
+  color: white;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Search Input */
+.input {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 60px;
+  border: 2px solid grey;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.input i {
+  color: black;
+  margin-right: 10px;
+}
+
+.input_box {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* Nav items */
+.nav_items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav_items div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login:hover,
+.profile:hover,
+.contact:hover {
+  background-color: rgba(0, 255, 94, 0.15);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* =========================
+   HERO / INTRO SECTION
+   ========================= */
+.second {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.second::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.text,
+.images {
+  position: relative;
+  z-index: 2;
+}
+
+.text {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.images img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   FERTILISERS
+   ========================= */
+.shop-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #a0bec6;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box-img {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   SUPPLIERS
+   ========================= */
+.best_sellers {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: rgb(223, 48, 48);
+  font-weight: 600;
+}
+
+.suppliers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.supply {
+  background-color: #a0bec6;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.supply:hover {
+  transform: translateY(-5px);
+}
+
+.supply_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: auto;
+}
+
+/* =========================
+   AGRI PRODUCTS
+   ========================= */
+.sellers {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  background-color: rgb(24, 133, 47);
+  font-weight: 600;
+}
+
+.Farmers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.sell {
+  background-color: #a0bec6;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.sell:hover {
+  transform: translateY(-5px);
+}
+
+.selling_img {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.box,
+.sell,
+.supply {
+  width: 100%;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  margin-top: 15px;
+}
+
+.foot-panel1 {
+  background-color: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-panel2 {
+  background-color: #0f714d;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.foot-panel4 {
+  background-color: #034949;
+  color: white;
+  height: 80px;
+  text-align: center;
+  font-size: 0.75rem;
+  padding-top: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  .input {
+    width: 100%;
+  }
+
+  .nav_items {
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+}
+
+
+/* =========================
+   FOOTER – REMAINING PARTS
+   ========================= */
+
+/* Footer links list */
+.foot-panel2 ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.foot-panel2 ul p {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.foot-panel2 ul a {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  color: #dddddd;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.foot-panel2 ul a:hover {
+  text-decoration: underline;
+}
+
+/* Logo panel */
+.foot-panel3 {
+  background-color: #074b32;
+  color: white;
+  height: 70px;
+  border-top: 0.5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer logo (reuse header logo image if needed) */
+.foot-panel3 .logo {
+  height: 50px;
+  width: 100px;
+  background-image: url("/assets/images/Other/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Footer bottom links */
+.pages {
+  padding-top: 10px;
+}
+
+.pages a {
+  margin: 0 10px;
+  color: white;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.pages a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  padding-top: 5px;
+  font-size: 0.7rem;
+}
+
+/* =========================
+   MOBILE FOOTER FIX
+   ========================= */
+@media (max-width: 600px) {
+  .foot-panel2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foot-panel2 ul {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+.sellers {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: rgb(24, 133, 47);
+  font-weight: 600;
+}
+
+.Farmers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #bcc69c;
+}
+
+.sell {
+  background-color: #a0bec6;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.sell:hover {
+  transform: translateY(-5px);
+}
+
+.selling_img {
+  height: 300px;
+  background-size: cover;
+  margin: 1rem 0;
+}

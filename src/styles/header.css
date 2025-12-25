@@ -1,0 +1,117 @@
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(18, 93, 19);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+/* Search input */
+.input {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 60px;
+  border: 2px solid grey;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.input i {
+  color: black;
+  margin-right: 10px;
+}
+
+.input_box {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* Nav items */
+.nav_items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.nav_items div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_items i {
+  font-size: 25px;
+}
+
+.nav_items h3 {
+  font-size: 18px;
+}
+
+.login:hover,
+.cart:hover,
+.logout:hover,
+.profile:hover,
+.contact:hover {
+  background-color: rgba(0, 255, 94, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.login a,
+.profile a,
+.logout a,
+.contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .logo,
+  .input,
+  .login,
+  .profile,
+  .logout {
+    flex: 1 1 0;
+  }
+
+  .nav_items > div {
+    display: none;
+  }
+
+  .nav_items .login,
+  .nav_items .profile {
+    display: flex;
+    margin: 10px;
+  }
+}
