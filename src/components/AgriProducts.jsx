@@ -19,7 +19,7 @@ function AgriProducts() {
             <div
               className="selling_img"
               style={{
-                backgroundImage: `url(/assets/images/Agri_Products/${p.img})`,
+                backgroundImage: `url(./public/assets/images/Agri_Products/${p.img})`,
               }}
             />
             <p>Rate : Rs.{p.price}/quintal</p>

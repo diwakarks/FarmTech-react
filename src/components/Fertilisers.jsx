@@ -19,7 +19,7 @@ function Fertilisers() {
             <div
               className="box-img"
               style={{
-                backgroundImage: `url(/assets/images/Fertilisers/${item.img})`,
+                backgroundImage: `url(./public/assets/images/Fertilisers/${item.img})`,
               }}
             />
             <p>See more</p>

@@ -19,7 +19,7 @@ function Suppliers() {
             <div
               className="supply_img"
               style={{
-                backgroundImage: `url(/assets/images/Farmers/${s.img})`,
+                backgroundImage: `url(./public/assets/images/Farmers/${s.img})`,
               }}
             />
             <p>Fertilisers available</p>
